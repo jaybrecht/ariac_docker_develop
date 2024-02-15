@@ -15,17 +15,17 @@ This repository contians a Dockerfile and scripts to run/develop for the ARIAC c
     To create a container without gpu acceleration:
 
     ```
-    ./create_container {container_name}
+    ./create_container.sh {container_name}
     ```
 
     To create a container with gpu acceleration:
 
     ```
-    ./create_container {container_name} nvidia
+    ./create_container.sh {container_name} nvidia
     ```
 
 3. Use the `open_terminal.sh` script to start working on the container. This can be run in multiple terminals to have multiple shells on the container. 
 
     ```
-    ./open_terminal {container_name}
+    ./open_terminal.sh {container_name}
     ```
