@@ -16,7 +16,7 @@ WORKDIR /home/ubuntu/ariac_ws
 
 RUN source /opt/ros/iron/setup.bash && \
     sudo apt-get update -qq && \
-    sudo apt-get install python3-pip -y && \
+    sudo apt-get install python3-pip wget -y && \
     pip install setuptools==58.2.0 && \
     git clone https://github.com/usnistgov/ARIAC.git src/ARIAC && \
     git clone https://github.com/usnistgov/nist_competitor.git src/nist_competitor && \
